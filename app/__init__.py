@@ -1,7 +1,7 @@
 import eel as app
 from core import generator as gen
 
-app.init("view")
+app.init("app/view")
 
 # func for gen the pass and return
 @app.expose
@@ -17,3 +17,4 @@ def get_pass( length ):
 
 # init the app
 app.start("index.html")
+
