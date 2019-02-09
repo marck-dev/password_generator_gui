@@ -22,6 +22,7 @@ document.getElementById( "gen_pass" ).onclick = () =>{
         w += 60;
 //    set the width
     passOut.style.width = w + "px";
+  }
 
 document.getElementById("toClip").onclick = ()=>{
 //    copy to clipboard
