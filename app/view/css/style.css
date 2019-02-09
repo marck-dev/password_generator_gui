@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+body{
+overflow-x: hidden;
+}
+header{
+height: 35vh;
+width: 100vw;
+background: #444;
+position: relative;
+}
+header h1{
+width: 100vw;
+text-align: center;
+font-size: 100px;
+position: absolute;
+top: 8vh;
+background: linear-gradient( to right, #4ae6f7, #4fff60 );
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+}
+.author::before{
+content: "@author: "
+}
+.author{
+width: 100vw;
+text-align: center;
+font-size: 17px;
+font-style: italic;
+position: absolute;
+bottom: 5vh;
+color: white;
+}
+
+#len label{
+  background: linear-gradient( to left, #4ae6f7, #4fff60);
+  font-size: 40px;
+  position: relative;
+  top: -60px;
+  font-weight: bolder;
+  background-clip: text;
+-webkit-background-clip: text;
+color: transparent;    
+}
+input{
+outline: none;
+border: none;
+  font-size: 140px;
+  text-align: right;
+  width: 170px;
+  font-weight: bolder;
+  color: #4ae6f7;
+  
+}
+input:focus, button:focus{
+  outline: none;
+}
+section{
+  columns: 2;
+  margin: 120px 20px;
+}
+#gen_pass{
+  margin: 6vh auto;
+  padding: 10px 40px;
+  min-width: 50%;
+  border-radius: 80px;
+  background: transparent;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4  );
+  background: linear-gradient( to right,#4ae6f7, #4fff60);
+  transition: all .6s;
+}
+#gen_pass:hover{
+  background: white;
+color: #444444;    
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+footer{
+  width: 100vw;
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  top: -20px;
+}
+#pass{
+  font-size: 30px;
+  font-weight: bolder;
+  background: linear-gradient( to left, #4ae6f7, #4fff60);
+  background-clip: text;
+-webkit-background-clip: text;
+color: transparent;    
+}
