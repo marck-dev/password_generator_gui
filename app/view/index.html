@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Password Generator</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,10 +15,10 @@
     <section>
         <div id="len">
             <label for="pass_len">Pass Length:</label>
-            <input type="number" id="pass_len" value="8" min="4" max="20" contenteditable="false" >
+            <input type="number" title="Set the length of the password"  id="pass_len" value="8" min="4" max="20" contenteditable="false" >
         </div>
         <div id="btn">
-            <button id="gen_pass">
+            <button title="Generate the password" id="gen_pass">
                 Generate
             </button>
         </div>
@@ -27,7 +28,10 @@
         <span class="info">
             Password: 
         </span>
-        <span id="pass"></span>
+        <input id="pass" type="text" contenteditable="false" placeholder="Your pass" />
+        <span id="toClip" title="Copy to clipboard" >
+            <i class="far fa-clipboard"></i>
+        </span>
     </footer>
     <script src="/eel.js"></script>
     <script src="js/main.js"></script>
