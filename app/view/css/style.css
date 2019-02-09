@@ -91,11 +91,24 @@ footer{
   position: relative;
   top: -20px;
 }
-#pass{
+#pass, #pass::placeholder{
   font-size: 30px;
   font-weight: bolder;
   background: linear-gradient( to left, #4ae6f7, #4fff60);
   background-clip: text;
 -webkit-background-clip: text;
 color: transparent;    
+text-align: left;
+min-width: 30px;
+}
+#toClip{
+  cursor: pointer;
+  color: #4ae6f7;
+  font-size: 30px;
+  transition: all .6s;
+}
+#toClip:hover{
+  color: #4fff60;
+  font-size: 40px;
+  font-weight: bold;
 }
